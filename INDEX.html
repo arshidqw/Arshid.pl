@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Girl Reading</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(120deg, #eaf3ff, #f9fcff);
+        animation: bgMove 12s ease infinite;
+        background-size: 300% 300%;
+    }
+
+    @keyframes bgMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* Floating animation for PNG girl */
+    .girl {
+        width: 330px;
+        animation: float 4s ease-in-out infinite;
+        border-radius: 18px;
+    }
+
+    @keyframes float {
+        0%   { transform: translateY(-6px); }
+        50%  { transform: translateY(6px); }
+        100% { transform: translateY(-6px); }
+    }
+</style>
+
+</head>
+<body>
+
+<!-- PNG IMAGE EMBEDDED DIRECTLY IN HTML (NO FILE NEEDED) -->
+<img class="girl"
+src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABkAAAANACAIAAABwQ0zcAAAAOXRFWHRTb2Z0d2FyZQBHZW5lcmF0ZWQgYnkgREFMTC1FLCBwcm9jZXNzZWQgd2l0aCBzdGFibGUgZGlmZnVzaW9uIG1vZGVsLqzEAQAAC0VJREFUeF7t3QENAAAIxDDdf2h5hQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPBzYHcAAQDIQgmLAAAAAElFTkSuQmCC"
+/>
+
+</body>
+</html>
